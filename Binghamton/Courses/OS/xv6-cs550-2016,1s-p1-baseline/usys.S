@@ -32,6 +32,7 @@ SYSCALL(uptime)
 
 
 // Test System Calls 
-// SYSCALL(myCall)
+SYSCALL(test)
+SYSCALL(cs550)
 //
 

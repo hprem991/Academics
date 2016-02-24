@@ -20,3 +20,11 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+
+// My Implememtation
+
+
+#define SYS_test  22
+#define SYS_cs550  23
+
+

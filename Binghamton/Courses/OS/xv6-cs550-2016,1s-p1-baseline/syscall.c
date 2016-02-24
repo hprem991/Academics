@@ -99,6 +99,12 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 
+// My Modification for cs550
+
+extern int sys_test(void);
+extern int sys_cs550(void);
+
+
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
 [SYS_exit]    sys_exit,
@@ -121,6 +127,12 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
+
+// My Modification for cs550
+
+[SYS_test] sys_test,
+[SYS_cs550] sys_cs550
+
 };
 
 void

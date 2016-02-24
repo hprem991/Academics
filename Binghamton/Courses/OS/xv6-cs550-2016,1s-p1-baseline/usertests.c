@@ -431,7 +431,7 @@ mem(void)
   int pid, ppid;
 
   printf(1, "mem test\n");
-  ppid = getpid();
+  ppid = getpid(); // getpid is been called from here
   if((pid = fork()) == 0){
     m1 = 0;
     while((m2 = malloc(10001)) != 0){
@@ -1703,17 +1703,54 @@ rand()
   return randstate;
 }
 
+int 
+test_cs550()
+{
+   printf(1," Into cs550 \n");
+   if(550 == cs550()){
+        printf(1," Retruned 550 \n");
+   } else {
+        printf(1," Retruned Non 550 \n");
+   }
+   return  cs550();
+}
+
+/*int 
+test()
+{
+   printf(1," into test \n");
+   if(15 == test()){
+        printf(1," Retruned 15 \n");
+    }
+        printf(1," Retruned Non 15 \n");
+    return test();
+}
+*/
+
 int
 main(int argc, char *argv[])
 {
   printf(1, "usertests starting\n");
+  printf(1, "Getting here starting\n");
 
   if(open("usertests.ran", 0) >= 0){
+    printf(1, "Inside\n");
     printf(1, "already ran user tests -- rebuild fs.img\n");
+    printf(1, "Inside testing system call %d \n", test());
+    printf(1, "Inside testing cs550 call %d \n", cs550());
     exit();
   }
-  close(open("usertests.ran", O_CREATE));
+   test();
+  printf(1, "Outside \n");
+  printf(1, "Outside  testing system call %d\n", test());
+  printf(1, "Outside testing cs550 call %d\n",cs550());
 
+
+  close(open("usertests.ran", O_CREATE));
+  
+
+  test_cs550();
+/*
   createdelete();
   linkunlink();
   concreate();
@@ -1751,7 +1788,8 @@ main(int argc, char *argv[])
   iref();
   forktest();
   bigdir(); // slow
-  exectest();
-
+  exectest(); */
+  //test();
+  //printf(1,"cs550 kernal call  %d ", cs550());
   exit();
 }
