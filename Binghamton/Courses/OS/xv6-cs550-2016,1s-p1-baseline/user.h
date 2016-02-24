@@ -24,6 +24,12 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 
+// My Modication From here
+
+int cs550(void);
+int test(void);
+
+
 // ulib.c
 int stat(char*, struct stat*);
 char* strcpy(char*, char*);
