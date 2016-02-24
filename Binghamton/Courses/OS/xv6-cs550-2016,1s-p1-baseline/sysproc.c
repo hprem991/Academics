@@ -7,6 +7,24 @@
 #include "mmu.h"
 #include "proc.h"
 
+#include "syscall.h"
+#include "stat.h"
+//#include "user.h"	
+// My Modification for cs550
+
+int 
+sys_test(void)
+{
+   return 15;
+}
+
+int 
+sys_cs550(void)
+{
+//   printf(1, " Kernel Called for 550 \n");
+   return 550;
+}
+
 int
 sys_fork(void)
 {
