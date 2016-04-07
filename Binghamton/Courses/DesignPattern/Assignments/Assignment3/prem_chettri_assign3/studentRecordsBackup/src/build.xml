@@ -1,0 +1,65 @@
+<project name="studentRecordsBackup" default="compile_all" basedir="..">
+
+  <property name="BUILD.compiler"       value="modern"/>
+  <property name="src"                  value="src"/>
+  <property name="BUILD"                value="BUILD"/>
+  <property name="classes"              value="${BUILD}/classes"/>
+
+
+  <target name="all" depends="compile_all"/>
+
+  <target name="compile_all"
+          depends="studentRecordsBackup"/>
+
+  <target name="clean">
+       <delete dir="${BUILD}"/>
+  </target>
+
+  <!-- Prepare target directories -->
+  <target name="prepare">
+        <mkdir dir="${BUILD}"/>
+        <mkdir dir="${classes}"/>
+  </target>
+
+
+ <target name="jar">
+        <mkdir dir="${BUILD}/jar"/>
+        <jar destfile="${BUILD}/jar/studentRecordsBackup.jar" basedir="${BUILD}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="studentRecordsBackup.driver.Driver"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+
+  <!-- ** means all subdirectories as well -->
+  <!-- * means all files in the current directory -->
+  <!-- for just java files use *.java -->
+
+  <target name="studentRecordsBackup" depends="prepare">
+    <javac srcdir="${src}"
+           includes="studentRecordsBackup/**"
+           excludes="**/package.html"
+           destdir="${classes}"
+           classpath="${classes}"
+           debug="on"
+           optimize="on"
+    	   includeantruntime = "false"
+           deprecation="off" />
+  </target>
+
+
+<target name="run" depends="jar">
+        <java jar="${BUILD}/jar/studentRecordsBackup.jar"  fork="true">
+		<arg value="${arg0}"/>
+		<arg value="${arg1}"/>
+        </java>
+    </target>
+
+<target name="tarzip" > 
+	    <delete file="./prem_chettri_assign3.tar" quiet="true" /> 
+	    <tar destfile="${BUILD}/dist/prem_chettri_assign3.tar.gz" basedir="../../" compression="gzip"/>
+</target>
+
+</project>

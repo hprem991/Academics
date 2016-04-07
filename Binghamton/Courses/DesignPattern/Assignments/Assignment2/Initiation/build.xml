@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Test Ant">
+	<target name="run" depends="compile">
+		<java classname="Driver">
+			<classpath path="bin" />
+		</java>
+	</target>
+	<target name="compile" >
+		<javac includeantruntime="false" srcdir="./src" destdir="./bin" /> 
+	</target>
+	<target name="doc" depends="run" description="generate documentation">
+	    <javadoc sourcepath="." destdir="./bin"/>
+	</target>
+</project>

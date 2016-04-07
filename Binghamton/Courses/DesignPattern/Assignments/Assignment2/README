@@ -1,0 +1,82 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT Assignment1 README FILE
+
+Due Date:  Tuesday, Feb 29, 2016
+Submission Date:  Tuesday, Feb 29, 2016
+Grace Period Used This Project: 0 Days
+Grace Period Remaining: 0 Days
+Author(s): Prem Krishna Chettri
+e-mail(s): pchettr1@binghamton.edu
+
+
+PURPOSE:
+  To find the the sum of the prime number (cs542 type) from the given file.	
+
+PERCENT COMPLETE:
+  100%
+
+PARTS THAT ARE NOT COMPLETE:
+  0%
+
+BUGS:
+  No
+
+
+JUSTIFICATION OF RESULTS DATA STRUCTURE:
+   I am using vector of Integer as my data structure for saving the prime number. The reason of my selection is
+the requirement of the given assignment. Assignment mainly focuses on storing (not retrieving) a large number of
+data efficiently.With that requirement, vector fits the most appropriate data structure among concurrenthashmap 
+ArrayList which were my other potential picks for this operation. Vector expands twice the rate of it current size
+making it likely to fit the large amount of data storage operation and does not need to reallocate memory for further 
+data for considerable longer amount of time then ArrayList which grows as 50% of its current size and reallocate 
+memory more often.
+   In comparison to ConcurrentHashMap which was producing efficient access time but the purpose of this assignment 
+is not only to access fast but store with lease memory operation. I tend to find that vector being more closely 
+fit for this need and hence parked ConcurrentHashMap (Although has full operation code with me).
+
+FILES:
+   build.xml
+   driver/Driver.java, The main driver program
+   store/Results.java,
+   store/StdoutDisplayInterface.java
+   threadMgmt/CreateWorkers.java, 
+   threadMgmt/WorkerThread.java,
+   util/IsPrime.java,
+   util/Logger.java, 
+   util/FileProcessor.java, All file processing activites.
+   README, the text file you are presently reading
+
+SAMPLE OUTPUT:
+	1> For Debug level as 0
+	   The sum of all the prime numbers is: <sum>
+
+	2> For Debug level as 1
+	   Index <index> Value <number>
+
+	3> For Debug level as 2
+	   Number is being added as <number>
+	
+	4> For Debug level as 3
+	   Method run is invoked
+
+	5> For Debug level as 4
+	    [java]  File Processor Constructor Called 
+    	    [java]  Is Prime Class Constructed 
+           [java]  Results Instance Created 
+           [java]  Created Thread Constructed 
+     	    [java]  Worker Thread Created 
+           [java]  Worker Thread Created 
+
+  
+
+TO COMPILE:
+   Compile code using following command
+	ant compile_all
+	
+    
+
+TO RUN:
+   Once compilation is successful. Please issuse following command from the directory location where build.xml location
+   ant  run -Darg0=<Input.txt file path name> -Darg1=<NUM_THREADS> -Darg2=<DEBUG_VALUE>
+

@@ -1,0 +1,42 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT Assignment1 README FILE
+
+Due Date:  Tuesday, Feb 2, 2016
+Submission Date:  Tuesday, Feb 2, 2016
+Grace Period Used This Project: 0 Days
+Grace Period Remaining: 0 Days
+Author(s): Prem Krishna Chettri
+e-mail(s): pchettr1@binghamton.edu
+
+
+PURPOSE:
+  To find the most frequent element name from the given file.	
+
+PERCENT COMPLETE:
+  100%
+
+PARTS THAT ARE NOT COMPLETE:
+  0%
+
+BUGS:
+  No
+
+FILES:
+   Driver.java, The main driver program
+   StringOperations.java, All string operations 
+   FileProcessor.java, All file processing activites.
+   README, the text file you are presently reading
+
+SAMPLE OUTPUT:
+  The most frequently occurring element is "ASIN" . It appears 15 times
+
+TO COMPILE:
+   Compile code using following command
+	javac *.java
+    
+
+TO RUN:
+   Once compilation is successful. Please issus following command
+       java Driver amazon.wsdl
+
