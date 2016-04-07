@@ -1,0 +1,50 @@
+0nnlnn
+1nnlnt
+7nnlnn
+8nnlnt
+3nnlnn
+4nnlnt
+5nnlnt
+8nnlnt
+3nnlnn
+4nnlnn
+5nnlnt  10
+8tnltn
+9nnlnt
+0nnlnt
+2nnlnt
+1nnlnt
+7nnlnn
+8nnlnt
+3nnlnn
+4nnlnt
+5tnltt  20
+8tnltt
+3nnlnn
+4nnlnn
+5tnltt
+8tnltn
+9nnlnt
+0nnlnt
+2nnlnt
+1tnltt 29
+7nnlnn
+8tnltt
+3nnlnn
+4nnlnt
+5tnltt
+8ttltt First Global
+3nnlnn
+4nnlnn
+5ttltt
+8tnltn
+9ttltt
+0ttltt
+2ttltt
+1tnltt
+7nnlnn
+8ttltt
+3nnlnn
+4ntlnt
+5ttltt
+8ttltt

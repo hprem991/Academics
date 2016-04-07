@@ -1,0 +1,18 @@
+PROJECT STRUCTURE AND EXECUTION STEPS 
+
+ You are currently at the present working directory of the project.This folder should contain following files and folders for proper execution.
+1> It should contain filename "Makefile".
+2> It should contain filename “Problem.java”
+3> It should of course contains the README.txt.
+
+COMMANDS FOR EXECUTION
+
+1> Please type "make" at the command prompt from this location.
+   Example :- admin$ make <ENTER>
+        This will create a .class file of the name Predictor.class in the same directory.
+
+2> Now please issue the following command from the same location of the command prompt.
+    $java Predictor <filename with correct path of the file>
+    Example :- admin$ java Predictor Sample.txt <ENTER>
+
+  
