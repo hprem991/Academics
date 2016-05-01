@@ -41,4 +41,14 @@
         android:layout_centerHorizontal="true"
         android:text="SUBMIT"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/ACCL"
+        android:layout_toEndOf="@+id/Name"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="67dp" />
+
 </RelativeLayout>
