@@ -1,0 +1,50 @@
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist
+The total number of words is: 7
+The most frequently used word is: hello 
+The frequency of the most frequently used word is: 2
+The number of characters (without whitespaces) is: 27
+The word Design does not exist

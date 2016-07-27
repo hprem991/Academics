@@ -1,0 +1,36 @@
+package wordCount.visitors;
+
+import wordCount.treesForStrings.BST;
+import wordCount.treesForStrings.Node;
+import wordCount.util.FileProcessor;
+
+public class PopulateTreeVisitor implements TreeProcessingVisitorI {
+	
+	FileProcessor fp = null;
+	
+	public PopulateTreeVisitor(FileProcessor fileP){
+		fp = fileP;
+	}
+
+	public void visit(BST bst) {
+		String line;
+		line = fp.readLineFromFile();
+		while(line != null){
+			for(String word: line.split(" ")){
+				if(word.equals("Yes")){
+					System.out.println();
+				}
+				if(word.length() > 0){
+					Node node = new Node(word);
+					bst.insert(node);
+				}
+			}
+			line = fp.readLineFromFile();
+		}
+	}
+
+	@Override
+	public void traverse(Node node) {
+				
+	}
+}

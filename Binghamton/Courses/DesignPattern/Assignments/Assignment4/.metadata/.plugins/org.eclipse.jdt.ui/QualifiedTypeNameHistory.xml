@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="wordCount.visitors.TreeProcessingVisitorI"/>
+<fullyQualifiedTypeName name="wordCount.visitors.grepVisitor"/>
+<fullyQualifiedTypeName name="wordCount.visitors.PopulateTreeVisitor"/>
+<fullyQualifiedTypeName name="wordCount.visitors.WordCountVisitor"/>
+<fullyQualifiedTypeName name="wordCount.treesForStrings.BST"/>
+<fullyQualifiedTypeName name="wordCount.util.FileProcessor"/>
+<fullyQualifiedTypeName name="wordCount.treesForStrings.Node"/>
+</qualifiedTypeNameHistroy>

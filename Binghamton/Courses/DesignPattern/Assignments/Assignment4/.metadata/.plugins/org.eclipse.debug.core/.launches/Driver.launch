@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/wordCount"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="wordCount.Driver.Driver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="Darg0 =/Users/admin/Desktop/I4 Darg1=/Users/admin/Desktop/Graduate/Binghamton/Courses/DesignPattern/Assignments/Assignment4/wordCount/output.txt Darg2=15 Darg3=You"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="wordCount"/>
+</launchConfiguration>

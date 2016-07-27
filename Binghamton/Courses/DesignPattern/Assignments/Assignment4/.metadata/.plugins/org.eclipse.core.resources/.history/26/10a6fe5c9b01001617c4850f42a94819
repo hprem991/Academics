@@ -1,0 +1,86 @@
+package wordCount.Driver;
+
+import java.io.File;
+import wordCount.treesForStrings.BST;
+import wordCount.treesForStrings.Node;
+import wordCount.visitors.TreeProcessingVisitorI;
+
+import wordCount.visitors.grepVisitor;
+import wordCount.util.FileProcessor;
+import wordCount.util.Logger;
+import wordCount.util.Logger.DebugLevel;
+
+public class Driver {
+	
+	/********************************************************
+	 * 
+	 * METHOD NAME : validate
+	 * INPUT 	   : String as a fileName, 
+	 * RETURNS	   : boolean
+	 * PURPOSE     : To Validate if the input values are compatiable
+	 *
+	 ********************************************************/
+
+	public static boolean validate(String fileName) 
+	{
+		File file = new File(fileName);
+		boolean validateFlag = true;
+
+		if(!(file.isFile() && file.exists() && file.canRead())) {
+			validateFlag = false;
+			Logger.writeOutput("Invalid Input file ");
+		}		
+		return validateFlag;		
+	}
+
+
+	public static void main(String args[]){
+		
+		Logger.setDebugValue(2); 
+		
+		try {
+			System.out.println("Here "+args.length);
+			if(1 == args.length) {		
+				String fileName = args[0];
+				System.out.println(" Filename "+fileName);
+				
+				if(validate(fileName)) {
+					FileProcessor fp = new FileProcessor(fileName);
+					BST tree = new BST("MAIN");
+					
+					// From here you have to use visitor to populate the tree Object
+					// Visitor  visitor = new Visitor();
+					// visitor.populate(tree); // Populate
+					// visitor.count(tree);
+					// visitor.grep(tree);
+					
+					TreeProcessingVisitorI visitor = new PopulateTreeVisitor();
+					tree.accept(visitor);
+					
+					visitor = new WordCountVisitor();
+					tree.accept(visitor);
+					
+					visitor = new grepVisitor();
+					tree.accept(visitor);
+					
+					tree.insert(new Node("Hey"));
+					tree.insert(new Node("Oh"));
+					tree.insert(new Node("So"));
+					tree.insert(new Node("Check"));
+					tree.insert(new Node("Tree"));
+					tree.printInorder();
+					
+					Logger.writeMessage("The search value is  "+tree.Search("Check").getCurrentWordCount(),
+			 			 			     DebugLevel.RESULT);
+
+				}
+			} else {
+			Logger.writeOutput("Validation Failed, Incorrect Input params!!");	
+			}
+		} catch (Exception e){
+			Logger.writeOutput("Invalid Argument "+e.getMessage());
+		} finally {
+			// Nothing to release here 
+		}
+	}
+}

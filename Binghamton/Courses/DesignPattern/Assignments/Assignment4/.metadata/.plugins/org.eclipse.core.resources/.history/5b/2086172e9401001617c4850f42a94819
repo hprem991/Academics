@@ -1,0 +1,10 @@
+package wordCount.visitors;
+
+public class PopulateTreeVisitor implements TreeProcessingVisitorI {
+	
+	
+	public class PopulateTreeVisitor(){
+		
+	}
+	
+}

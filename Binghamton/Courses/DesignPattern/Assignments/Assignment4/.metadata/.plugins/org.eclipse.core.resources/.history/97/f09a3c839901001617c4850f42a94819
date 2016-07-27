@@ -1,0 +1,9 @@
+package wordCount.visitors;
+
+import wordCount.treesForStrings;
+
+public interface TreeProcessingVisitorI {
+	public void visit(Node node, PopulateTreeVisitor tree);
+	public void visit(Node node,WordCountVisitor tree);
+	public void visit(Node node,grepVisitor tree);
+}

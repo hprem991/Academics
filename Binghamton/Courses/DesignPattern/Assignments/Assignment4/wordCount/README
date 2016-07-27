@@ -1,0 +1,86 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT Assignment1 README FILE
+
+Due Date:  Tuesday, March 22, 2016
+Submission Date:  Tuesday, Mar 22, 2016
+Grace Period Used This Project: 0 Days
+Grace Period Remaining: 0 Days
+Author(s): Prem Krishna Chettri
+e-mail(s): pchettr1@binghamton.edu
+
+
+PURPOSE:
+  To Design the Observer / Builder Design Pattern for BST backup Application.	
+
+PERCENT COMPLETE:
+  100%
+
+PARTS THAT ARE NOT COMPLETE:
+  0%
+
+BUGS:
+  No
+
+
+JUSTIFICATION OF RESULTS DATA STRUCTURE:
+   I am using ArrayList as my data structure. The reason I opted for array list is the number of potential observers
+and its access type. We usually, don’t have a lot or insert operation in addition of observers and the data structure 
+growth size of array list being 50% makes it highly feasible data structure for the application. Also, with my design of
+Observer pattern, I am able to push the update from Subject by just analyzing each object filter type.
+
+FILES:
+   build.xml
+   driver/Driver.java, The main driver program
+   bst/BST.java,
+   bst/EvenFilter.java,
+   bst/OddFilter.java,
+   bst/FilterI.java,
+   bst/Node.java,
+   bst/ObserverI.java,
+   bst/SubjectI.java,
+   util/BSTBuilder.java,
+   util/BSTWorkshopInterface.java,
+   util/Logger.java, 
+   util/FileProcessor.java, All file processing activites.
+   README, the text file you are presently reading
+
+SAMPLE OUTPUT:
+	 [java] Printing Main Tree
+     [java] 2
+     [java] 3
+     [java] 6
+     [java] Printing BackUp 1 Tree
+     [java] 2
+     [java] 3
+     [java] 6
+     [java] Printing BackUp 2 Tree
+     [java] 2
+     [java] 3
+     [java] 6
+     [java] The sum of all the B-Numbers is 33
+     [java] Updating Node
+     [java] The sum of all the B-Numbers is 73
+
+  
+
+TO COMPILE:
+   Compile code using following command
+	ant compile_all
+	
+    
+
+TO RUN:
+   Once compilation is successful. Please issuse following command from the directory location where build.xml location
+   ant  run -Darg0=<Input.txt file path name> -Darg1=<UPDATE_VALUE>
+   
+   
+COMMENTS :-
+
+  As there are numerous places where I found confusion on the understanding of the requirement, I have commented / provided all possible 
+  alternatives implementations.So, if my output is not in sync with requirement. kindly do check for the corresponding code as the current 
+  output is one of the likely expected program output. Example :- Priting sum of BNumbers could be cumilative sum or sum in each tree. 
+  So I have a method which does each tree and then I add them up to print the value to make sure I have both covered.
+  
+      
+    

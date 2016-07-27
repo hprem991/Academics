@@ -1,0 +1,64 @@
+CS542 Design Patterns
+Spring 2016
+PROJECT Assignment4 README FILE
+
+Due Date:  Thursday, April 21, 2016
+Submission Date:  Thursday, April 21, 2016
+Grace Period Used This Project: 2 Days
+Grace Period Remaining: 0 Days
+Author(s): Carlos Segura, Prem Krishna Chettri
+e-mail(s): csegura1@binghamton.edu, pchettr1@binghamton.edu
+
+
+PURPOSE:
+  To Design the Visitor Pattern for retrieval of information from an input file using a BST.	
+
+PERCENT COMPLETE:
+  100%
+
+PARTS THAT ARE NOT COMPLETE:
+  0%
+
+BUGS:
+  None
+
+
+JUSTIFICATION OF DATA STRUCTURE:
+  We decided to use a Binary Search Tree as that outperformed the other trees(AVL and Trie) 
+  we implemented. The difference in performance was almost two times better than the others.
+  An implementation of Trie would have been ideal if the performance test did not include 
+  populating the tree.
+
+FILES:
+  build.xml
+  Driver.java, The main driver program   BST.java, the Binary Search Tree object
+  Node.java, the nodes associated with the Binary Search Tree
+  FileProcessor.java, input/output file processing
+  Logger.java, logger for debugging
+  grepVisitor.java, visitor that outputs the number of times a word appears
+  PopulateTreeVisitor.java, visitor that populates the tree
+  TreeProcessingVisitorI.java, interface for the visitors
+  WordCountVisitor.java, visitor that outputs the different counts needed for output
+  README, the text file you are presently reading
+
+
+TO COMPILE:
+  ant compile_all
+	
+TO RUN:
+  ant run -Darg0=<input file path name> -Darg1=<output file name> -Darg2=<number of iterations> -Darg3=<search word>
+
+
+SAMPLE OUTPUT:
+ >ant run -Darg0=/import/linux/home/pchettr1/Desktop/Courses/DesignPattern/Assignment4/prem_chettri_assign4/wordCount/InputAssignment4 -Darg1=/import/linux/home/pchettr1/Desktop/Courses/DesignPattern/Assignment4/prem_chettri_assign4/wordCount/output_prem.txt -Darg2=10 -Darg3=Design
+Buildfile: /import/linux/home/pchettr1/Desktop/Courses/DesignPattern/Assignment4/prem_chettri_assign4/wordCount/build.xml
+
+jar:
+
+run:
+     [java] The Average time is  10 milliseconds
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+COMMENTS: Please check the corresponding output file for the result 

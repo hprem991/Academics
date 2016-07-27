@@ -1,0 +1,7 @@
+package wordCount.visitors;
+
+public interface TreeProcessingVisitorI {
+	public void visit(PopulateTreeVisitor tree);
+	public void visit(grepVisitor tree);
+	public void visit(WordCountVisitor tree);
+}

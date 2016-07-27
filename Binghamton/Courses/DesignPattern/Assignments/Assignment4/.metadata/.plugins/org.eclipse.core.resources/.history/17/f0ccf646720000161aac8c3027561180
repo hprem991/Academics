@@ -1,0 +1,54 @@
+package wordCount.treesForStrings;
+
+
+import wordCount.treesForStrings.Node;
+
+import java.util.Arrays;
+
+public class TrieNode {
+	private char value;
+	private boolean end;
+	private int wordCount; // counter that keeps the number of words that end in this node
+	private TrieNode childs[];
+	
+	public TrieNode(char input){
+		value = input;
+		wordCount = 0;
+		childs = new TrieNode[26];
+		Arrays.fill(childs, null);
+	}
+
+	public char getValue() {
+		return value;
+	}
+
+	public void setValue(char value) {
+		this.value = value;
+	}
+
+	public int getWordCount() {
+		return wordCount;
+	}
+
+	public void setWordCount(int wordCount) {
+		this.wordCount = wordCount;
+	}
+
+	public TrieNode[] getChilds() {
+		return childs;
+	}
+
+	public void setChilds(TrieNode[] childs) {
+		this.childs = childs;
+	}
+	
+	public TrieNode getChild(char value) {
+		int index =  (value - 'a') % 26;
+		return childs[index];
+	}
+
+	public void setChild(TrieNode node) {
+		int index = (node.getValue() - 'a') % 26;
+		this.childs[index] = node;
+	}
+}

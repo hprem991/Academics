@@ -1,0 +1,81 @@
+package wordCount.treesForStrings;
+
+
+
+import java.io.BufferedReader;
+
+
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.InputStreamReader;
+
+
+
+public class FileProcessor {
+
+	private BufferedReader br = null;
+	
+	/********************************************************
+	 * 
+	 * METHOD NAME : FileProcessor
+	 * INPUT 	   : String as a fileName
+	 * RETURNS	   : FileProcessor object
+	 * PURPOSE     : Creation of FileProcessor object and 
+	 * 			     setting its member variables
+	 *
+	 ********************************************************/
+
+	public FileProcessor(String fileName) {
+		try {
+			br = new BufferedReader(new FileReader(fileName));
+			Logger.writeMessage(" File Processor Constructor Called ", 
+								DebugLevel.CONSTRUCTOR);
+		} catch (Exception e) {
+			System.out.println("Processor Exception  "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	/********************************************************
+	 * 
+	 * METHOD NAME : readLineFromFile
+	 * INPUT 	   : void
+	 * RETURNS	   : String
+	 * PURPOSE     : one line of the file as a String at a time
+	 *
+	 ********************************************************/
+
+	public String readLineFromFile(){
+		String readline = null; 
+		try{
+			synchronized(this){
+				if(br.ready())
+				readline = br.readLine();
+			}
+		} catch (Exception e){
+			System.out.println("Processor Exception  "+e.getMessage());
+			e.printStackTrace();
+		} finally {
+			try {
+				// br.close(); This is creating a socket close error 
+							 //hence commented 
+			} catch(Exception e){
+				//... This is igonored anyways
+			}
+		}
+		return readline;
+	}
+	
+	/********************************************************
+	 * 
+	 * METHOD NAME : toString
+	 * INPUT 	   : void
+	 * RETURNS	   : String
+	 * PURPOSE     : Stringify the data members
+	 *
+	 ********************************************************/
+	
+	public String toString(){
+		return br.toString();
+	}
+}

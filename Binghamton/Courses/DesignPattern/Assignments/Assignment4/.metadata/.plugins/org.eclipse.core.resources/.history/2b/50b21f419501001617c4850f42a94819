@@ -1,0 +1,31 @@
+package wordCount.visitors;
+
+import wordCount.treesForStrings.BST;
+
+public class PopulateTreeVisitor implements TreeProcessingVisitorI {
+	
+	private BST tree;
+	public PopulateTreeVisitor(BST treeIN){
+		tree =  treeIN;
+	}
+	
+	@Override
+	public void visit(PopulateTreeVisitor tree) {
+		// TODO Auto-generated method stub
+		tree.populate();// Assume
+		
+	}
+	@Override
+	public void visit(WordCountVisitor tree) {
+		// TODO Auto-generated method stub
+		tree.count();
+		
+	}
+	@Override
+	public void visit(grepVisitor tree) {
+		// TODO Auto-generated method stub
+		tree.grep();	
+	}
+	
+	
+}

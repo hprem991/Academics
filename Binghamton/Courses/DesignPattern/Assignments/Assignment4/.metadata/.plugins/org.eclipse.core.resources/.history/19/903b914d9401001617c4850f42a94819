@@ -1,0 +1,12 @@
+package wordCount.visitors;
+
+import wordCount.treesForStrings.BST;
+
+public class PopulateTreeVisitor implements TreeProcessingVisitorI {
+	
+	private BST tree;
+	public class PopulateTreeVisitor(BST treeIN){
+		tree = 
+	}
+	
+}
