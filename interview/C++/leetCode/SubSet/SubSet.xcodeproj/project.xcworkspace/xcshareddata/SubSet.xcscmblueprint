@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F202C1B32BD55212042B0D0C7E64C34B7DB30B07",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D736E11BE6810D8D9C33FDA6D4A542BDD6C9F06E" : 0,
+    "F202C1B32BD55212042B0D0C7E64C34B7DB30B07" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9B358BAB-4258-405B-A156-A4389CC126EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D736E11BE6810D8D9C33FDA6D4A542BDD6C9F06E" : "",
+    "F202C1B32BD55212042B0D0C7E64C34B7DB30B07" : "interview\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SubSet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "C++\/leetCode\/SubSet\/SubSet.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hprem991\/Academics.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D736E11BE6810D8D9C33FDA6D4A542BDD6C9F06E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mission-peace\/interview.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F202C1B32BD55212042B0D0C7E64C34B7DB30B07"
+    }
+  ]
+}
